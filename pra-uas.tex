@@ -1,0 +1,231 @@
+\documentclass{beamer}
+\usetheme{Warsaw}
+
+\title{Kalkulus II}
+\author{Kadek Adi Hendrawan (NIM: 22262011190)}
+\institute{Sekolah Tinggi Teknologi Bandung}
+\date{\today}
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\begin{frame}
+  \frametitle{\textbf{DAFTAR ISI}}
+  \tableofcontents
+\end{frame}
+
+\section{Materi 1}
+
+\begin{frame}
+  \frametitle{Materi 1 - Fungsi Rasional}
+
+  \begin{enumerate}
+    \item $\displaystyle \int \frac{{5x + 7}}{{x^2 - 9}} \, dx$
+    \item $\displaystyle \int \frac{x + 3}{x^2 + 3x - 4} \, dx$
+    \item $\displaystyle \int \frac{3x + 5}{x^2 + 4x + 4} \, dx$
+  \end{enumerate}
+
+\end{frame}
+\begin{frame}{Jawaban}
+        \begin{enumerate}
+1. $\displaystyle =\int \frac{11}{3\left(x-3\right)}+ \frac{4}{3\left(x+3\right)} \,dx$
+    $\displaystyle=\int \frac{11}{3\left(x-3\right)} \, dx+ \int \frac{4}{3\left(x+3\right)} \,dx$
+    $\displaystyle=\frac{11}{3}\cdot \ln \left(\left|x-3\right|\right)+ \frac{4}{3} \cdot \ln \left(\left|x+3\right|\right)+C$
+\end{enumerate}
+\begin{enumerate}
+2. $\displaystyle =\int \frac{1}{5\left(x+4\right)}+\frac{4}{5\left(x-1\right)} \, dx$
+    $\displaystyle  =\int \frac{1}{5\left(x+4\right)} \, dx + \int\frac{4}{5\left(x-1\right)} \, dx$
+    $\displaystyle = \frac{1}{5} \cdot \ln \left(\left|x+4\right|\right)+ \frac{4}{5} \cdot \ln \left(\left|x-1\right|\right)+C$
+\end{enumerate}
+\end{frame}
+\begin{frame}{Jawaban}
+    \begin{enumerate}
+3. $\displaystyle = \frac{3x+5}{x^2+4x+4}$
+    $\displaystyle = \frac{A}{\left(x+2\right)}+\frac{B}{\left(x+2\right)^2} = \frac{A\left(x^2\right)+B}{x^2+4x+4} = \frac{Ax+2A+B}{x^2+4x+4}$
+    $\displaystyle = \int \frac{3x+5}{x^3+4x+4}\, dx = \int \frac{3}{x+2}-\frac{1}{\left(x+2\right)^2}\, dx$ 
+    $\displaystyle = 3 \ln \left|x+2\right|+\frac{1}{x+2}+C$
+    \end{enumerate}
+\end{frame}
+
+\section{Materi 2}
+
+\begin{frame}
+  \frametitle{Materi 2 - L'HOPITAL}
+  \begin{enumerate}
+    \item $\lim_{{x \to 0}} \frac{{5x^3 +7x^2 +5x}}{{3x^2 + 10x}}$
+    \item $\lim_{{x \to 0}} \frac{{1 - \cos x}}{x \sin x}$
+    \item $\lim_{{x \to \pi}} \left(\frac{{x \sin (x)^2}}{{\cos (x) + \cos 2x}}\right)$
+    \item $\lim_{{x \to -1}} \frac{{x^3+7x+8}}{{2x^2-2}}$
+    \item $\lim_{{x \to -2}} \frac{{x^3-2x^2-8}}{{-2x^2-2}}$
+  \end{enumerate}
+  \end{frame}
+  \begin{frame}{Jawaban}
+      \begin{enumerate}
+1. $\displaystyle = \lim_{x \to 0} \frac{5x^2+7x+5}{3x+10}$
+    $\displaystyle =\frac{5 \cdot 0^2 +7\cdot0+5}{3\cdot0+10} = \frac{5}{10} =\frac{1}{2}$
+      \end{enumerate}
+      \begin{enumerate}
+2. $\displaystyle = \frac{\sin x}{\sin x + x \cos x} = \frac{\cos x}{2 \cos x - x \sin x}$
+    $\displaystyle = \frac{\cos0}{2\cos0-0\sin0}=\frac{1}{2\cdot1}=\frac{1}{2}$
+      \end{enumerate}
+\end{frame}
+
+\begin{frame}{Jawaban}
+    \begin{enumerate}
+3. $\displaystyle = \lim_{x \to \pi}\left(-\frac{\sin x +2x \cos x}{1+4\cos x}\right) =-\frac{\sin \pi + 2\pi \cos\pi}{1+4\cos\pi}=-\frac{2\pi}{3}$
+    \end{enumerate}
+    \begin{enumerate}
+4. $\displaystyle = \lim_{x \to -1}\frac{3x^2+7}{4x}=\frac{3\cdot-1^2+7}{4\left(-1\right)}=\frac{10}{-4}=\frac{5}{-2}$
+    \end{enumerate}
+    \begin{enumerate}
+5. $\displaystyle =\lim_{x\to -2}\frac{3x^2-4x-8}{-2x-2}=\frac{3\left(-2\right)^2-4\left(-2\right)-8}{-2\left( -2 \right)-2}$
+    $\displaystyle =\frac{12+8-8}{4-2}=\frac{12}{2}=6$
+    \end{enumerate}
+\end{frame}
+
+\section{Materi 3}
+
+\begin{frame}
+  \frametitle{Materi 3 - Konvergen dan Divergen}
+  
+  \begin{enumerate}
+    \item \(\displaystyle\int_7^\infty \frac{x}{\sqrt{9+x^2}} \, dx\)
+    \item \(\displaystyle\int_{-\infty}^{\infty} x \cos x \, dx\)
+    \item \(\displaystyle\int_{-\infty} ^2 \frac{dx}{x^5}\)
+    \item $\int_{1}^{\infty}\frac{dx}{\sqrt{3x}}$
+    \item \(\displaystyle\int_{2}^{\infty} \frac{dx}{x \ln x}\)
+  \end{enumerate}
+  
+\end{frame}
+
+\begin{frame}{Jawaban}
+    \begin{enumerate}
+1. $\displaystyle = \int_7^\infty \frac{x}{\sqrt{9+x^2}} \, dx = -3\ln|\cos\theta|\bigg|_{\theta_0}^{\frac{\pi}{2}}=\infty (Divergen)$
+    \end{enumerate}
+    \begin{enumerate}
+2. $\displaystyle =\int_{-\infty}^{\infty} x \cos x \, dx = \infty (Divergen)
+$
+    \end{enumerate}
+    \begin{enumerate}
+3. $\displaystyle =\int_{-\infty} ^2 \frac{dx}{x^5}=-\frac{1}{4}-\infty+\infty(Divergen)
+$
+    \end{enumerate}
+    \begin{enumerate}
+4. $\displaystyle =\int_{1}^{\infty}\frac{dx}{\sqrt{3x}} = \left[\sqrt{3x}\right]_{1}^{\infty} = \lim_{{t \to \infty}} \sqrt{3t} - \sqrt{3(1)} = \lim_{{t \to \infty}} \sqrt{3t} - \sqrt{3} - (\sqrt{3} - \sqrt{3}) = \lim_{{t \to \infty}} \sqrt{3t} - \sqrt{3}$
+    $\displaystyle=\infty-\frac{2}{3}\sqrt{3}=\infty(Divergen)$
+    \end{enumerate}
+    \begin{enumerate}
+5. $\displaystyle =\int_{2}^{\infty} \frac{dx}{x \ln x}
+=\infty-\ln\left|\ln2\right|=\infty(Divergen)$
+    \end{enumerate}
+\end{frame}
+
+\section{Materi 4}
+
+\begin{frame}
+  \frametitle{Materi 4 - Pembuktian Divergen}
+  \begin{enumerate}
+    \item $\displaystyle \int_{2}^{4} \frac{dx}{(3-x)^{\frac{2}{3}}}$
+    \item $\displaystyle \int_{0}^{3} \frac{x}{9-x^2} \, dx$
+    \item $\displaystyle \int_{0}^{2} \frac{x}{x^3+x-2} \, dx$
+  \end{enumerate}
+\end{frame}
+\begin{frame}{Jawaban}
+ \begin{enumerate}
+1. $\displaystyle=\int_{2}^{4} \frac{dx}{(3-x)^{\frac{2}{3}}}=\infty-3(Divergen)$
+ \end{enumerate}
+ \begin{enumerate}
+2. $\displaystyle=\int_{0}^{3} \frac{x}{9-x^2} \, dx =\int_{0}^{3}\frac{x}{9-x^2}\,dx(Divergen)$
+ \end{enumerate}
+ \begin{enumerate}
+3. $\displaystyle=\int_{0}^{2} \frac{x}{x^3+x-2} \, dx=3\ln +3\ln2=3\ln2(Divergen)$
+ \end{enumerate}
+\end{frame}
+\section{LAMPIRAN}
+\begin{frame}
+    \frametitle{LAMPIRAN - Gambar}
+    \centering
+\begin{itemize}
+    \item Sumber: Dokumentasi Pribadi (REPOSITORIES)
+\end{itemize}
+\begin{figure}
+    \centering
+
+    \begin{enumerate}
+\rotatebox{90}{\includegraphics[width=0.5\linewidth]{1.jpg}}
+    \end{enumerate}
+    
+    \caption{BAGIAN 1}
+    \label{fig:enter-label}
+\end{figure}
+\end{frame}
+\begin{frame}
+\begin{figure}
+    \centering
+    \rotatebox{90}{\includegraphics[width=0.5\linewidth]{2.jpg}}
+    \caption{BAGIAN 2}
+    \label{fig:enter-label}
+\end{figure}
+\end{frame}
+\begin{frame}
+\begin{figure}
+    \centering
+     \rotatebox{90}{\includegraphics[width=0.5\linewidth]{3.jpg}}
+
+    \caption{BAGIAN 3}
+    \label{fig:enter-label}
+\end{figure}
+\end{frame}
+\begin{frame}
+    
+\begin{figure}
+    \centering
+     \rotatebox{90}{\includegraphics[width=0.5\linewidth]{4.jpg}}
+    \caption{BAGIAN 4}
+    \label{fig:enter-label}
+\end{figure}
+\end{frame}
+\begin{frame}
+    
+\begin{figure}
+    \centering
+     \rotatebox{90}{\includegraphics[width=0.5\linewidth]{5.jpg}}
+    \caption{BAGIAN 5}
+    \label{fig:enter-label}
+\end{figure}
+\end{frame}
+\begin{frame}
+    
+\begin{figure}
+    \centering
+     \rotatebox{90}{\includegraphics[width=0.5\linewidth]{6.jpg}}
+    \caption{BAGIAN 6}
+    \label{fig:enter-label}
+\end{figure}
+\end{frame}
+\begin{frame}
+    
+\begin{figure}
+    \centering
+     \rotatebox{90}{\includegraphics[width=0.5\linewidth]{7.jpg}}
+    \caption{BAGIAN 7}
+    \label{fig:enter-label}
+\end{figure}
+\end{frame}
+\begin{frame}
+    
+\begin{figure}
+    \centering
+     \rotatebox{90}{\includegraphics[width=0.5\linewidth]{8.jpg}}
+    \caption{BAGIAN 8}
+    \label{fig:enter-label}
+\end{figure}
+\end{frame}
+\begin{frame}{PENUTUP}
+    \centering TERIMAKASIH
+\end{frame}
+
+\end{document}
